@@ -1,4 +1,3 @@
-import sys
 class Solution:
     @staticmethod
     def main(args: list[str]) -> None:
