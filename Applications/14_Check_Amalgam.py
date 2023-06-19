@@ -3,11 +3,21 @@
 from collections import Counter
 
 
+# Brute Force
+def isAnagram(string1: str, string2: str) -> bool:
+    s_chars = list(string1)
+    for character in string2:
+        if character not in s_chars:
+            return False
+        s_chars.remove(character)
+    return not s_chars
+
+
 def is_anagram(string1: str, string2: str) -> bool:
     window = len(string1)
     hash_map1 = Counter(string1)
     for i in range(len(string2) - window + 1):
-        hash_map2 = Counter(string2[i:i + window])
+        hash_map2 = Counter(string2[i : i + window])
         if hash_map2 == hash_map1:
             return True
     return False
