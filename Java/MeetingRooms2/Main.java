@@ -1,7 +1,6 @@
 package MeetingRooms2;
 
 import MeetingRooms.Interval;
-import MeetingRooms2.Solution;
 
 import java.util.Arrays;
 import java.util.List;

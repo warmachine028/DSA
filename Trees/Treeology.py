@@ -157,3 +157,14 @@ Examples:
 """
 print(BinaryTree([1, 2, 3, 4, 7, None, 5]))
 print(BinaryTree([1, 2, 3, 4, None, None, 5]))
+
+from datastax.Trees import BinaryTree
+
+print(BinaryTree())
+
+print(BinaryTree(),
+      BinaryTree([]),
+      BinaryTree(None),
+      BinaryTree([None]),
+      BinaryTree([None, None, None]))
+print(BinaryTree(range(1, 32)))
